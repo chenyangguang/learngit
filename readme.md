@@ -197,3 +197,5 @@ git blame file 和 git log file 会有不同。 同样是跟踪一个文件。
 git 忽略文件权限修改
 	所有git库:   git config --global core.fileMode false
 	当前库:  git config core.fileMode false
+
+git checkout - 和cd - 类似 , 会一直在上一个分支和现在的分支之间一直切换, cd - 会一直和上一个目录切换。
