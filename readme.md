@@ -207,3 +207,6 @@ git checkout - 和cd - 类似 , 会一直在上一个分支和现在的分支之
 	(3)vim .git-credentials
 		添加 https://username:password@github.com
 	(4)终端配置git config --global credentials.helper store
+
+git fsck --lost-found 
+git show hashidxxxxxx
