@@ -200,7 +200,7 @@ git 忽略文件权限修改
 
 git checkout - 和cd - 类似 , 会一直在上一个分支和现在的分支之间一直切换, cd - 会一直和上一个目录切换。
 
---------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------
 忽略用户名和密码push
 	(1)~ 目录下面，
 	(2)touch .git-credentials 新建一个文件
@@ -208,5 +208,9 @@ git checkout - 和cd - 类似 , 会一直在上一个分支和现在的分支之
 		添加 https://username:password@github.com
 	(4)终端配置git config --global credentials.helper store
 
+
+-------------------------------------------------------------------------------------------------
 git fsck --lost-found 
 git show hashidxxxxxx
+git rebase hashidxxxxx 
+http://gitbook.liuhui998.com/5_9.html
