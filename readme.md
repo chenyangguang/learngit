@@ -213,4 +213,7 @@ git checkout - 和cd - 类似 , 会一直在上一个分支和现在的分支之
 git fsck --lost-found 
 git show hashidxxxxxx
 git rebase hashidxxxxx 
-http://gitbook.liuhui998.com/5_9.html
+http://gitbook.liuhui998.com/5_9.html 
+
+分支重命名
+git branch -m old-branch-name  new-branch-name
