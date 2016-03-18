@@ -217,3 +217,6 @@ http://gitbook.liuhui998.com/5_9.html
 
 分支重命名
 git branch -m old-branch-name  new-branch-name
+
+git rebase master -i 
+    出现多个分支的提交, 可以将那些需要合并到一个提交的commit前面的pick加改成s, 即meld的选择项, 可以在rebase过程中合并开发的过程到一个commit中, so sexy! 
