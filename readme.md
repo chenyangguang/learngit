@@ -222,3 +222,5 @@ git rebase master -i
     出现多个分支的提交, 可以将那些需要合并到一个提交的commit前面的pick加改成s, 即meld的选择项, 可以在rebase过程中合并开发的过程到一个commit中, so sexy! 
 
 批量删除本地已经合并到master的分支: git branch --merged | grep -v "\*" | grep -v master | grep -v dev | xargs -n 1 git branch -d
+
+git fetch --prune && git branch -r | awk '{print $1}' | egrep -v -f /dev/fd/0 <(git branch -vv | grep origin) | awk '{print $1}' | xargs git branch -d
