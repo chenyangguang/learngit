@@ -223,4 +223,17 @@ git rebase master -i
 
 批量删除本地已经合并到master的分支: git branch --merged | grep -v "\*" | grep -v master | grep -v dev | xargs -n 1 git branch -d
 
+-------------------------------------------------------------------------------------------------
 git fetch --prune && git branch -r | awk '{print $1}' | egrep -v -f /dev/fd/0 <(git branch -vv | grep origin) | awk '{print $1}' | xargs git branch -d
+
+
+-------------------------------------------------------------------------------------------------
+少+ 的一次revert 操作过程学习
+git revert 的一点小操作
+git revert --no-commit 001d431
+... 63eaa7f
+... 4cdaba6
+...
+git revert --no-commit 9419f5b 最后一个，停！
+git commit 提交，push 
+
