@@ -3,3 +3,5 @@ git rm \*.js
 
 
 测试 revert -1
+
+测试 revert -2
