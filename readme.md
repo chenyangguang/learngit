@@ -289,3 +289,9 @@ git rm -r --cached dirname
 ```
 
 比如 node_module, logs 之类无需上传的目录
+
+## worktree 问题
++ **git worktree** 如果不小心配置启动了，会多出来两个环境变量 **GIT_WORK_TREE** 和 **GIT_DIR**, 这时候从远程拉下来的代码会一直放进一个固定的项目中。比如在 A 项目中使用 **git pull** 命令, 将有可能一直将 B 代码拉到 A 项目中， 造成 git 功能无法正常使用。
++ **git worktree** 问题 [参考 ](https://stackoverflow.com/questions/5283262/what-is-git-work-tree-why-have-i-never-needed-to-set-this-env-var-why-now)
+
+-
