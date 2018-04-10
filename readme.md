@@ -319,4 +319,4 @@ alias gd='git diff'
   publish = "!git push -u origin $(git branch-name)"
 ```
 
- [git 教程有关短命令配置的一个文档](https://git-scm.com/book/en/v2/Git-Basics-Git-Aliases)
+ + [git 教程有关短命令配置的一个文档](https://git-scm.com/book/en/v2/Git-Basics-Git-Aliases)
