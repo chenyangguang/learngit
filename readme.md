@@ -295,3 +295,28 @@ git rm -r --cached dirname
 + **git worktree** 问题 [参考 ](https://stackoverflow.com/questions/5283262/what-is-git-work-tree-why-have-i-never-needed-to-set-this-env-var-why-now)
 
 + **git worktree** [官方文档](https://git-scm.com/docs/git-worktree)
+
+##  短命令的三种方式
+
+
+1. 命令行直接配置
+```
+ git config --global alias.co checkout
+```
+2. 或者通过设置 **~/.zshrc** 配置文件, 设置包括 git 前缀在内更短的命令.
+
+```
+alias gs='git status '
+alias ga='git add '
+alias gb='git branch '
+alias gc='git commit'
+alias gd='git diff'
+```
+3. 配置 **~/.gitconfig**, 添加至 alias 配置项， 如果没有就加上
+
+```
+[alias]
+  publish = "!git push -u origin $(git branch-name)"
+```
+
+ [git 教程有关短命令配置的一个文档](https://git-scm.com/book/en/v2/Git-Basics-Git-Aliases)
