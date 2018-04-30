@@ -320,3 +320,10 @@ alias gd='git diff'
 ```
 
  + [git 教程有关短命令配置的一个文档](https://git-scm.com/book/en/v2/Git-Basics-Git-Aliases)
+
+
+
+## 命令行时间轴的精确比较
+```
+git diff HEAD@{'2 months ago'}
+```
