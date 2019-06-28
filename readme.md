@@ -328,5 +328,9 @@ alias gd='git diff'
 git diff HEAD@{'2 months ago'}
 ```
 ## remember git username and password
-```git config credential.helper store
+```
+git config --global credential.helper store
+git config --global user.name "chenyangguang"
+git config --global user.password "yourpwd"
+
 ```
