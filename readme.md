@@ -327,3 +327,6 @@ alias gd='git diff'
 ```
 git diff HEAD@{'2 months ago'}
 ```
+## remember git username and password
+```git config credential.helper store
+```
